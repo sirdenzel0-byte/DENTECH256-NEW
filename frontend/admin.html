@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Dentech 256</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Admin Dashboard</h2>
+  <div id="login">
+    <input id="user" placeholder="Username"><br>
+    <input id="pass" placeholder="Password" type="password"><br>
+    <button onclick="login()">Login</button>
+  </div>
+  <div id="panel" style="display:none;">
+    <h3>Manage Products</h3>
+    <div id="product-list"></div>
+    <h3>Add Product</h3>
+    <input id="pname" placeholder="Name"><br>
+    <input id="pdesc" placeholder="Description"><br>
+    <input id="pprice" placeholder="Price"><br>
+    <button onclick="addProduct()">Add</button>
+  </div>
+  <script src="admin.js"></script>
+</body>
+</html>
